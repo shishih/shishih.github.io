@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>本体与Protege</title>
+    <title>opencv-python笔记</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>本体与Protege</h1>
+            <h1>opencv-python笔记</h1>
             <p></p>
 
             <p class="view">
@@ -26,28 +26,26 @@
         <section>
 
             <h3>
-                <a id="进入" class="anchor" href="#进入" aria-hidden="true">
+                <a id="安装" class="anchor" href="#安装" aria-hidden="true">
                     <span class="octicon octicon-link"></span>
                 </a>
-                基本构件
+                安装
             </h3>
 
-            <h4>命名空间</h4>
-            <p>在添加了命名空间与对应的URL后，添加新类时直接输出包含命名空间的类名，Protege会自动识别其URL。</p>
-            <h4>类</h4>
-            <p>在Protege5中名字不能改变，但是可以通过改变SubClassOf来改变类间关系</p>
-            <h4>属性</h4>
-            <p>属性分为两种，ObjectProperty和DataProperty。前者联系两个实体，即值域为一个实例，后者联系一个实体和一个值，值域为一个值。</p>    
+            <p>opencv的版本以python的版本为准，而不是系统的位数。</p>
 
             <h3>
-                <a id="推理规则" class="anchor" href="#推理规则" aria-hidden="true">
+                <a id="函数" class="anchor" href="#函数" aria-hidden="true">
                     <span class="octicon octicon-link"></span>
                 </a>
-                推理规则
+                函数
             </h3>
 
-            <h4>类的推理</h4>
-            <p>在ObjectProperty中建立属性的限定词如果不是some，而是only等限定词，就可能会改变类之间的关系。推理后，代表改变后的类的小黄点中有三根白线。</p>
+            <h4>基础</h4>
+            <code>cv2.imread('picname')</code><br>
+            <code>im.shape</code>
+            <code>>>>[512,512,3]</code><br>
+            <code>cv2.imwrite(filename,name)</code>
             <h4>实例的推理</h4>
             <p>为该实例添加属性值后，在类和属性窗口中出现的新的浅黄底色的新的类和属性就是推理结果。</p>
 
